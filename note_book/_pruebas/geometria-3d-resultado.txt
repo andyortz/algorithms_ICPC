@@ -1,0 +1,4 @@
+Compilador: g++.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 14.2.0
+Comando (desde note_book): g++ -std=gnu++20 -O2 -Wall -Wextra _pruebas/geometria-3d.cpp  -> 0 avisos
+Fecha: 2026-11-05
+geometria-3d: 136325 comprobaciones OK (119 ms)

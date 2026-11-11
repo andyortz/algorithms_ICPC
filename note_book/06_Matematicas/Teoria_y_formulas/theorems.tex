@@ -1,0 +1,24 @@
+\section*{Erdős–Szekeres Theorem}
+This theorem is related to increasing and decreasing sequences.
+
+Suppose \( a, b \in \mathbb{N} \), \( n = ab + 1 \), and \( x_1, x_2, \dots, x_n \) is a sequence of \( n \) real numbers. Then this sequence contains a monotonic increasing (decreasing) subsequence of \( a + 1 \) terms or a monotonic decreasing (increasing) subsequence of \( b + 1 \) terms. Dilworth's lemma is a generalization of this theorem.
+
+\section*{Grundy Numbers in Game Theory}
+Grundy numbers are used in game theory to analyze games that can be represented as directed state graphs. In these graphs, if a player loses in a state, its Grundy number is zero; otherwise, it is a positive number. The Grundy number for each vertex is defined as:
+
+\[
+\text{Grundy}(\text{losing state with no moves}) = 0
+\]
+\[
+\text{Grundy}(\text{vertex}) = \text{MEX}(\text{adjacent\_nodes}[\text{vertex}])
+\]
+
+where MEX stands for the "minimum excludant," which is the smallest non-negative integer not present in the set of Grundy numbers of adjacent nodes.
+
+If you have multiple independent games, the final Grundy number is calculated as:
+
+\[
+\text{Grundy}(\text{game}_1) \oplus \text{Grundy}(\text{game}_2) \oplus \text{Grundy}(\text{game}_3) \oplus \dots \oplus \text{Grundy}(\text{game}_n)
+\]
+
+where \( \oplus \) denotes the bitwise XOR operation.

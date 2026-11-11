@@ -1,0 +1,30 @@
+Binary exponentiation: 
+An algorithm to do the exponentiation of: 
+a^b
+where b -> is a large number, in a O(log(b)) instead of O(b). 
+algorithm: file binpow.cpp
+Homogeneous coordinates: 
+We have a point in the space in the syntax: 
+P(x_1, x_2, ..., x_n) 
+in the cartesian space, but if we want to explain it more, for project the geometry of any point, and work with matrix, instead of vectors. 
+So for do that, we have something called homogeneous coordinates, with represent a point in a n+1 variables in the space to add a scalar time for any point, where the scalar must be diferent of 0.
+
+So the result would be: 
+P'(x_1*z, x_2*z, ..., x_n*z, x_n+1=z)
+where z is the scalar factor of the point: 
+P(x_1, x_2, ..., x_n)
+
+
+Fibonacci Numbers: 
+Properties: 
+1. Cassini's identity: 
+	F_n-1*F_n+1 - F_n^2 = (-1)^n
+2. Addition rule: 
+	F_n+k = =F_k*F_n+1 + F_k-1*F_n
+3. F_nk is multiple of F_n
+4. GCD identity: 
+	GCD(F_m, F_n) = F_gcd(m,n)
+5. 
+
+You have a grid to fill with tiles of 1x2 and 2x1 properties: 
+always possible if n%2 = 0 and think of a chess board (a tile always occupies 1 black and 1 white)

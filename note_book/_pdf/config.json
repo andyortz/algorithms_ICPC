@@ -1,0 +1,30 @@
+{
+  "titulo": "Notebook ICPC",
+  "subtitulo": "algorithms_ICPC · C++ / Python",
+  "salida": "../notebook-carta-{columnas}-columnas.pdf",
+  "papel": "Letter",
+  "orientacion": "horizontal",
+  "columnas": 3,
+  "tamCodigo": "7pt",
+  "tamTexto": "7.2pt",
+  "margenes": { "top": "18mm", "bottom": "9mm", "left": "7mm", "right": "7mm" },
+  "blancoYNegro": true,
+  "extensiones": ["cpp", "hpp", "py", "tex", "txt", "md"],
+  "excluir": [
+    "06_Matematicas/Teoria_y_formulas/in.txt",
+    "06_Matematicas/Teoria_de_numeros/Divisores/hcn-all-vasito.txt",
+    "06_Matematicas/Teoria_de_numeros/Divisores/hcn-vasito.txt",
+    "07_Geometria/Geometria_3D/problemas-3d.md",
+    "09_Utilidades/CPP/ascii-table-extra.tex",
+    "09_Utilidades/Rendimiento/time-complexities-extra.tex",
+    "09_Utilidades/Rendimiento/while-tle.cpp",
+    "10_Python/README.md",
+    "10_Python/debug.py",
+    "10_Python/rendimiento.py",
+    "10_Python/stress.py"
+  ],
+  "quitarLineasVacias": true,
+  "quitarLineasQueEmpiezanCon": ["// Tema:", "// Base:", "// Validación y dependencias:", "// Adaptación:", "// Selección:", "// Hash seleccionado:",
+    "// APUNTE ORIGINAL:", "// Requisito: Respetar y configurar límites", "// Requisito: Contiene main de ejemplo/prueba",
+    "// Requisito: Operaciones de bits/ensamblador", "// Requisito: E/S C: revisar formatos"]
+}

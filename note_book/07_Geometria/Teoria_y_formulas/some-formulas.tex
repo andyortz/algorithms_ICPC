@@ -1,0 +1,36 @@
+\subsection*{Volume of Glass with Water (Volumen del Vaso)}
+Given:
+\begin{itemize}
+    \item \( p \) is the height of the water
+    \item \( r_1 \) is the big radius at the water's surface
+    \item \( r_2 \) is the small radius of the base
+\end{itemize}
+
+The volume of the glass with water is given by:
+
+\[
+\text{Volume} = p \cdot \pi \cdot \frac{ \left( r_1^2 + r_2^2 + r_1 \cdot r_2 \right)}{3}
+\]
+
+\subsection*{Heron's Formula}
+Finding the area of a triangle by the length of its sides, also applicable for points using Euclidean distance. You can use the following code to get the area; if the square root is negative, then the triangle is not valid.
+
+\begin{lstlisting}[language=C++, frame=None]
+long double triangle_area(long double a, long double b, long double c) {
+    long double s = (a + b + c) / 2;
+    return sqrtl(s * (s - a) * (s - b) * (s - c));
+}
+\end{lstlisting}
+
+\subsection*{Sine and Cosine Laws}
+Let \( a \), \( b \), and \( c \) be the sides of the triangle, and \( A \), \( B \), and \( C \) the angles opposite to these sides, respectively.
+
+The Sine Law:
+\[
+\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}
+\]
+
+The Cosine Law:
+\[
+c^2 = a^2 + b^2 - 2ab \cdot \cos C
+\]

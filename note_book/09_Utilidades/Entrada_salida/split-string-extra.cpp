@@ -1,0 +1,21 @@
+// Tema: 09_Utilidades/Entrada_salida
+// Base: Template/simple.cpp (int = long long).
+// Adaptación: Texto explicativo original convertido a comentarios C++ (2 líneas).
+// Validación y dependencias: ver CATALOGO.md y _verificacion/resultados.json.
+
+#ifndef NOTEBOOK_GENERADO_27C4BC7F4C1C17AA
+#define NOTEBOOK_GENERADO_27C4BC7F4C1C17AA
+#include "../../_base/template-simple.hpp"
+
+// Divide el string s por cada espacio ' ' y devuelve un vector<> con los substrings resultantes.
+// Para dividir el string por un caracter especifico, agregar el parametro c y cambiar el while.
+
+vector<string> split(const string &s/*, char c*/) {
+    vector<string> v;
+    stringstream ss(s);
+    string sub;
+    while (ss >> sub) v.pb(sub);
+    // while (getline(ss, sub, c)) v.pb(sub);
+    return v;
+}
+#endif

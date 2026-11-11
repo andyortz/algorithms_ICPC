@@ -1,0 +1,20 @@
+How many numbers are there less than or equal to n that are free of squares?. Contrainsts: $1 <= n <= 10^{12}$
+\newline\newline
+Change the statement to count the reverse and then sustract: How many numbers are ... that can be divided by a square of a prime. So the answer will be $n -$ Summatory with Inclusion-Exclusion of $f(prime)$
+\newline
+$$ f(prime) = floor(\frac{n}{p*p}) $$
+\newline
+So in those cases of summatory with primes, you can use Mobius to adding or substracting. Final answer is
+
+$$ n - \Sigma^{\sqrt{n}}_{i=1} \mu(i)\left\lfloor \frac{n}{i^2} \right\rfloor $$ 
+\newline
+Or in programming terms:
+
+\begin{lstlisting}[language=C++, frame=None]
+long long ans = n;
+for (int i =1;i<=sqrt(n);i++) {
+    ans -= mo[i] * n/(i*i);
+}
+\end{lstlisting}
+
+

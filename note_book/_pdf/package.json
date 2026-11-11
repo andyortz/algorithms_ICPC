@@ -1,0 +1,16 @@
+{
+  "name": "notebook-pdf",
+  "private": true,
+  "type": "module",
+  "description": "Genera el PDF del notebook (2 columnas, índice) con Edge/Chrome instalado",
+  "scripts": {
+    "pdf": "node generar.mjs"
+  },
+  "dependencies": {
+    "highlight.js": "^11.12.0",
+    "katex": "^0.19.1",
+    "marked": "^18.1.3",
+    "pdfjs-dist": "^6.5.438",
+    "puppeteer-core": "^25.16.0"
+  }
+}
